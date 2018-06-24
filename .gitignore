@@ -1,0 +1,10 @@
+
+# User-specific stuff:
+.idea/
+
+# virtualenv
+venv/
+.venv/
+ENV/
+
+.docker-volumes/*
