@@ -10,3 +10,14 @@ def import_single_stock(ticker, date_min, date_max):
     :return:
     """
     return pdr.get_data_yahoo(ticker, start=date_min, end=date_max)
+
+
+def get_single_stock(ticker, date_min, date_max):
+    """
+    Returns a single ticker symbol for the given time range from Yahoo finance API.
+    :param ticker:
+    :param date_min:
+    :param date_max:
+    :return:
+    """
+    return pdr.get_data_yahoo(ticker, start=date_min, end=date_max)
