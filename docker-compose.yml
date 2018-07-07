@@ -11,4 +11,11 @@ services:
       - MYSQL_DATABASE=root                       
       - MYSQL_ROOT_PASSWORD=mypassword
 
-  jupyter/datascience-notebook
+  jupyter:
+    image: jupyter/datascience-notebook
+    ports:
+     - "10000:8888"
+    volumes:
+     - /home/msc/emoinvest/notebooks:/home/jovyan/work
+    environment:
+     - JUPYTER_LAB_ENABLE=yes

@@ -1,0 +1,3 @@
+#start jupyter notebook docker
+docker run  -p 10000:8888 -e JUPYTER_LAB_ENABLE=yes -v /home/msc/emoinvest/notebooks:/home/jovyan/work jupyter/datascience-notebook
+
