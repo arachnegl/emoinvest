@@ -7,4 +7,8 @@ venv/
 .venv/
 ENV/
 
+# docker volumnes
 .docker-volumes/*
+
+# credentials
+src/emoinvest/configurations/dev.ini
