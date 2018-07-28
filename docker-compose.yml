@@ -16,6 +16,6 @@ services:
     ports:
      - "10000:8888"
     volumes:
-     - /home/msc/emoinvest/notebooks:/home/jovyan/work
+     - /monkey_notebooks:/home/jovyan/work
     environment:
      - JUPYTER_LAB_ENABLE=yes
