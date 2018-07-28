@@ -2,9 +2,7 @@
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 apt-key fingerprint 0EBFCD88
 add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   ${DOCKER_RELEASE}"
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 apt-get update --allow-unauthenticated
 apt-get install -y docker-ce mysql-client ${PYTHON_PKGS} python-virtualenv freetds-dev libssl-dev libffi-dev --allow-unauthenticated
 
