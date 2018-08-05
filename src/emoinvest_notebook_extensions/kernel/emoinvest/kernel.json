@@ -1,0 +1,1 @@
+{"language": "python", "argv": ["/home/ubuntu/emoinvest/.venv/bin/python", "-m", "ipykernel", "-f", "{connection_file}", "--ext", "emoinvest_notebook_extensions.bootstrap"], "display_name": "Emoinvest", "env": {}}
