@@ -69,3 +69,16 @@ class MySqlConnector:
                 con.commit()
         finally:
             con.close()
+
+    @staticmethod
+    def get_watchlist():
+        configuration_reader = get_config_reader()
+        con = pymysql.connect('localhost', configuration_reader.get('settings', 'mysql_user'), configuration_reader.get('settings', 'mysql_pass'))
+        try:
+            with con.cursor() as cursor:
+                sql = ("""
+                          SELECT ticker_symbol FROM watchlists
+                      """)
+                return cursor.execute(sql).fetchall()
+        finally:
+            con.close()

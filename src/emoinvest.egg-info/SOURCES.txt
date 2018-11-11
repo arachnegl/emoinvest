@@ -2,9 +2,10 @@
 Makefile
 README.md
 docker-compose.yml
-generic.pickle
 notes
 setup.py
+.eggs/README.txt
+.eggs/setuptools_scm-2.1.0-py3.6.egg
 notebooks/plotting_test.ipynb
 notebooks/test_notebook.ipynb
 notebooks/.ipynb_checkpoints/plotting_test-checkpoint.ipynb
@@ -33,3 +34,6 @@ src/emoinvest/stock_data_importer/__init__.py
 src/emoinvest/stock_data_importer/stock_import.py
 src/emoinvest/stock_data_importer/__pycache__/__init__.cpython-36.pyc
 src/emoinvest/stock_data_importer/__pycache__/stock_import.cpython-36.pyc
+src/emoinvest_notebook_extensions/__init__.py
+src/emoinvest_notebook_extensions/bootstrap.py
+src/emoinvest_notebook_extensions/kernel/emoinvest/kernel.json

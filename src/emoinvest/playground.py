@@ -1,14 +1,25 @@
-
+from alpha_vantage.techindicators import TechIndicators
 import matplotlib.pyplot as plt
 
-from mysql.mysql_connector import MySqlConnector
-from stock_data_importer.stock_import import import_single_stock
 
-ticker = 'DAX'
-start='2018-01-01'
-end='2018-01-24'
+ti = TechIndicators(key='3NYOU6ML1J5P3L40', output_format='pandas')
+data, meta_data = ti.get_rsi(symbol='^GSPC', interval='60min', time_period=20)
+data.plot()
+a = len(data)
+plt.title('BBbands indicator for  MSFT stock (60 min)')
+plt.show()
 
-data = import_single_stock(ticker, start, end)
+a = 1
 
-connector = MySqlConnector()
-connector.insert_or_update_stock_data(data, 'stocks_daily')
+from alpha_vantage.sectorperformance import SectorPerformances
+import matplotlib.pyplot as plt
+
+sp = SectorPerformances(key='3NYOU6ML1J5P3L40', output_format='pandas')
+data, meta_data = sp.get_sector()
+data['Rank A: Real-Time Performance'].plot(kind='bar')
+plt.title('Real Time Performance (%) per Sector')
+plt.tight_layout()
+plt.grid()
+plt.show()
+
+a = 1
