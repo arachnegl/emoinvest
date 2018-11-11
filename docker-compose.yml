@@ -16,7 +16,7 @@ services:
     ports:
      - "8888:8888"
     volumes:
-     - /monkey_notebooks:/home/jovyan/work
-     - /monkey_notebooks/config:/home/jovyan/.jupyter/jupyter_notebook_config.py
+     - /home/ubuntu/monkey_notebooks:/home/jovyan/work
+     - /home/ubuntu/emoinvest/src/emoinvest/configurations:/home/jovyan/.jupyter
     environment:
      - JUPYTER_LAB_ENABLE=yes

@@ -12,3 +12,8 @@ ENV/
 
 # credentials
 src/emoinvest/configurations/dev.ini
+src/emoinvest/configurations/mycert.pem
+.eggs/
+src/emoinvest.egg-info/
+src/emoinvest/configurations/jupyter_notebook_config.py
+src/emoinvest/configurations/migrated
