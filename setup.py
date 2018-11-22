@@ -50,7 +50,8 @@ if __name__ == '__main__':
             'slackclient==1.3.0',
             'airflow',
             'alpha_vantage',
-            'matplotlib'
+            'matplotlib',
+            'boto3',
         ],
         dependency_links=[],
         zip_safe=True

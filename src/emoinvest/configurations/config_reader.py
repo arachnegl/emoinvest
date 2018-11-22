@@ -3,5 +3,5 @@ from configparser import ConfigParser
 
 def get_config_reader():
     parser = ConfigParser()
-    parser.read('./configurations/dev.ini')
+    parser.read('/home/msc/emoinvest/src/emoinvest/configurations/dev.ini')
     return parser
