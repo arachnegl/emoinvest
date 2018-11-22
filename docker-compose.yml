@@ -11,12 +11,14 @@ services:
       - MYSQL_DATABASE=root                       
       - MYSQL_ROOT_PASSWORD=mypassword
 
-  jupyter:
-    image: jupyter/datascience-notebook
-    ports:
-     - "8888:8888"
-    volumes:
-     - /home/ubuntu/monkey_notebooks:/home/jovyan/work
-     - /home/ubuntu/emoinvest/src/emoinvest/configurations:/home/jovyan/.jupyter
-    environment:
-     - JUPYTER_LAB_ENABLE=yes
+#  jupyter:
+#    image: jupyter/datascience-notebook
+#    ports:
+#     - "8888:8888"
+#    volumes:
+#     - /home/ubuntu/monkey_notebooks:/home/jovyan/work
+#     - /home/ubuntu/emoinvest/src/emoinvest/configurations:/home/jovyan/.jupyter
+#     - /home/ubuntu/emoinvest/src/emoinvest_notebook_extensions:/home/jovyan/extension
+#     - /home/ubuntu/emoinvest/.venv:/home/ubuntu/emoinvest/venv
+#    environment:
+#     - JUPYTER_LAB_ENABLE=yes
