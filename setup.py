@@ -52,6 +52,8 @@ if __name__ == '__main__':
             'alpha_vantage',
             'matplotlib',
             'boto3',
+            'mpl_finance',
+            'pandas_datareader'
         ],
         dependency_links=[],
         zip_safe=True

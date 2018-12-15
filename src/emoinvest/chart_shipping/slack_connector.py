@@ -26,5 +26,5 @@ def send_chart(message, title, chart_name):
         ],
     }
 
-    slack.chat.post_message('#alerts', text=message, attachments=[attachement])
+    slack.chat.post_message('#bot_test', text=message, attachments=[attachement])
     return True

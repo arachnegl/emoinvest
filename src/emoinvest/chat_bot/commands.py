@@ -28,7 +28,7 @@ def send_bbands(ticker_symbol: str, days: int) -> True:
     ts = TimeSeries(key=configuration_reader.get('settings', 'alpha_vantage_api_key'), output_format='pandas')
     prices, meta_data = ts.get_daily(symbol=ticker_symbol, outputsize='full')
     result = pd.concat([data, prices], axis=1, sort=True)
-    file_name = 'BBands_' + str(today().strftime('%Y-%m-%d')) + '_' + ticker_symbol + '.png'
+    file_name = 'BBands_' + str(today().strftime('%Y-%m-%d')) + '_' + ticker_symbol + str(days) + '.png'
     plot = plot_bbands(result, ticker_symbol, days)
     plot.savefig(build_file_path(file_name))
     save_file_to_s3(file_name)
