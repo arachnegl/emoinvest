@@ -1,12 +1,14 @@
 import pandas as pd
+
+from dateutil.utils import today
 from alpha_vantage.sectorperformance import SectorPerformances
 from alpha_vantage.techindicators import TechIndicators
 from alpha_vantage.timeseries import TimeSeries
-from chart_plotting.plot import plot_sector_performance, plot_bbands
-from chart_shipping.slack_connector import send_chart
-from chart_storage.connector_s3 import save_file_to_s3, build_file_path
-from configurations.config_reader import get_config_reader
-from dateutil.utils import today
+
+from emoinvest.chart_plotting.plot import plot_sector_performance, plot_bbands
+from emoinvest.chart_shipping.slack_connector import send_chart
+from emoinvest.chart_storage.connector_s3 import save_file_to_s3, build_file_path
+from emoinvest.configurations.config_reader import get_config_reader
 
 configuration_reader = get_config_reader()
 

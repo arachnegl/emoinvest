@@ -53,6 +53,7 @@ if __name__ == '__main__':
             'boto3',
             'mpl_finance',
             'pandas_datareader'
+            'slacker',
         ],
         dependency_links=[],
         zip_safe=True

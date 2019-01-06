@@ -1,4 +1,5 @@
-from configurations.config_reader import get_config_reader
+from emoinvest.configurations.config_reader import get_config_reader
+
 from slacker import Slacker
 
 configuration_reader = get_config_reader()
