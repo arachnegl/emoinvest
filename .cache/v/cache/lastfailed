@@ -1,5 +1,0 @@
-{
-  "src/emoinvest/mysql/mysql_connector.py": true,
-  "src/emoinvest/playground.py": true,
-  "src/emoinvest/stock_data_importer/stock_import.py": true
-}
