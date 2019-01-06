@@ -1,2 +1,0 @@
-emoinvest
-emoinvest_notebook_extensions
