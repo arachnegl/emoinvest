@@ -27,7 +27,7 @@ if __name__ == '__main__':
         include_package_data=True,
         extras_require={
             'develop': [
-                'pytest==3.3.1',
+                'pytest==9.1.1',
                 'pytest-env==0.6.2',
                 'pytest-pythonpath==0.7.1',
                 'pytest-cov==2.5.1',
