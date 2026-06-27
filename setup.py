@@ -31,7 +31,7 @@ if __name__ == '__main__':
                 'pytest-env==0.6.2',
                 'pytest-pythonpath==0.7.1',
                 'pytest-cov==2.5.1',
-                'pytest-flake8==0.9.1',
+                'pytest-flake8==1.3.0',
             ]
         },
         setup_requires=[
